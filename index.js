@@ -203,31 +203,30 @@ while (i <= 28) {
   i++;
 }
 
-
 // //do...while loop
 // do {
 //     //code to be repeated
 // }while(condition);
 
-let u = 10
+let u = 10;
 do {
-console.log(u)
-u++
-}while(u<=5)
+  console.log(u);
+  u++;
+} while (u <= 5);
 
 //break vs continue
-for(let i= 1; i <= 5; i++) {
-    if(i==3){
-        break
-    }
-    console.log(i)
-} 
+for (let i = 1; i <= 5; i++) {
+  if (i == 3) {
+    break;
+  }
+  console.log(i);
+}
 
-for(let i= 1; i <= 5; i++) {
-    if(i==3){
-        continue
-    }
-    console.log(i)
+for (let i = 1; i <= 5; i++) {
+  if (i == 3) {
+    continue;
+  }
+  console.log(i);
 }
 
 //Mapping
@@ -239,33 +238,124 @@ const array1 = [2, 4, 12, 25];
 const map1 = array1.map((x) => x * 1.5);
 console.log(map1);
 
-
 //example 2 - stringile sama lõpu lisamine
 const array2 = ["õun", "porgand", "emis", "oeh"];
 
 const map2 = array2.map((x) => x + "iin");
 console.log(map2);
 
-
 //string replace
 
 const paragraph = "Mina tahan väga süüa sushit!";
 
-console.log(paragraph.replace("tahan väga", 'kavatsen'));
+console.log(paragraph.replace("tahan väga", "kavatsen"));
 // Expected output: "Mina kavatsen süüa sushit!"
 
 const regex = /väga/i;
-console.log(paragraph.replace(regex, 'täna'));
+console.log(paragraph.replace(regex, "täna"));
 // Expected output: "Mina tahan täna süüa sushit!"
-
 
 //pop - võtab lõpust
 //slice - lõikab määratud vahemiku
 
+const asjadkorvis = ["lehvik", "hommikumantel", "kapsas", "2 kilu", "hari"];
+let alles = asjadkorvis.slice(0, 4);
 
-const asjadkorvis = ['lehvik', 'hommikumantel', 'kapsas', '2 kilu', 'hari'];
-let alles = asjadkorvis.slice(0,4);
+let alles2 = alles.pop();
+console.log(alles2);
 
-let alles2 = alles.pop()
-console.log(alles2)
+//ÜLESANNE 1
+function greetUser(name12) {
+  console.log("Hello, " + name12 + "!");
+}
 
+greetUser("Lily");
+
+//ÜLESANNE 2
+
+let ylvanus = 17;
+
+if (ylvanus >= 65) {
+  console.log("Pensionär");
+} else if (ylvanus < 18) {
+  console.log("Alaealine");
+} else {
+  console.log("Täisealine");
+}
+
+//ÜLESANNE 3 - Paaris või paaritu
+
+const numberpaar = 22;
+function kontrolliPaarisVoiPaaritu(numberpaar) {
+  return numberpaar % 2 === 0; //Jääkväärtuse arvutamise funktsioon
+}
+
+if (kontrolliPaarisVoiPaaritu(numberpaar)) {
+  console.log(numberpaar + " on paaris arv.");
+} else {
+  console.log(numberpaar + " ei ole paaris arv.");
+}
+
+//ÜLESANNE 1.2
+
+const greetUser2 = () => {
+  const nameyl = prompt("Mis su nimi on?"); //Küsib kasutjalt promptiga
+  if (nameyl) {
+    console.log("Tere, " + nameyl + "!"); //Juhul kui kasutaja annab nime
+  } else {
+    console.log("Tere, võõras!"); //Juhul kui ei anna nime
+  }
+};
+
+greetUser2();
+
+//MASSIIVIDE ÜLESANNE
+
+let sn2kid = ["krõpsud", "küpsised", "sokolaad", "kummikommid", "juustupulgad"];
+
+//array lõppu lisamine
+sn2kid.push("kananagitsad");
+console.log(sn2kid);
+
+sn2kid[6] = "kananagitsad vol2";
+console.log(sn2kid);
+
+sn2kid[sn2kid.length] = "kananagitsad vol3";
+
+//array esimese vahetamine
+sn2kid[0] = "pähklid";
+console.log(sn2kid);
+
+//pikkuse kuvamine
+console.log(sn2kid.length);
+
+//tähestiku järjekorda
+sn2kid.sort();
+console.log(sn2kid);
+
+const toit = ["eelroog", "supp", "praad", "magustoit"];
+const toitsoodud = toit.map((x) => x + " söödud");
+
+console.log(toitsoodud);
+
+//TSÜKKEL
+//kuva numbrid üksteise alla
+for (let i = 1; i <= 9; i++) {
+  console.log(i);
+}
+
+//kuva arrayna
+const numbers = [];
+for (let i = 1; i <= 9; i++) {
+  numbers.push(i);
+}
+console.log(numbers);
+
+//paarisarvude summa 1-10
+let tulemus = 0;
+for (let y = 0; y <= 11; y++) {
+  if (y % 2 === 0) {
+    tulemus += y;
+  }
+}
+console.log(tulemus);

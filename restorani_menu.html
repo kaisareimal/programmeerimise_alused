@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restorani menüü</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(to left, #ddc8c4, #896a67);
+      color: #333;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+    div {
+      margin: auto;
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #333;
+      color: rgb(246, 223, 246);
+      padding: 24px 12px;
+      border-radius: 12px;
+    }
+    h1 {
+      color: #fff;
+    }
+    th {
+      text-align: left;
+      color: #fff;
+    }
+    td {
+      padding-right: 24px;
+      padding-bottom: 4px;
+    }
+  </style>
+  <body>
+    <div>
+      <h1>Odav menüü</h1>
+      <table id="tulemuseTabel">
+        <thead>
+          <tr>
+            <th>Nimi</th>
+            <th>Hind</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="restorani_menu.js"></script>
+  </body>
+</html>

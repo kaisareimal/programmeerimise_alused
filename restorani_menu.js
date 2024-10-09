@@ -82,7 +82,6 @@ function analyzeMenu(menu) {
 }
 
 const tulemus = analyzeMenu(resto_menu);
-//lisab tulemuse HTML faili div'i id'ga "tulemus"
 const massiivOdavad = tulemus.odavHind;
 
 console.log("Odavad tooted massiivis:", massiivOdavad);

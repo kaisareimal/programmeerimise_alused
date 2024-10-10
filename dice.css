@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+body {
+    background-color: #271631;
+    color: white;
+    font-family: "Rampart One", sans-serif;
+}
+
+h1 {
+    font-weight: 400;
+    text-align: center;
+}
+
+#rollButton {
+    background-color: white;
+    color: #271631;
+    border-radius: 12px;
+    font-size: x-large;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+    padding: 12px 24px;
+    margin-bottom: 24px;
+    transition: 0.3s
+}
+#rollButton:hover {
+    background-color: #523563;
+    color: white;
+}
+
+#m2ng {
+display: flex;
+flex-direction: column;
+width:600px;
+margin: auto;
+margin-top: 60px;
+padding: 40px 24px;
+border-radius: 40px;
+background-image: linear-gradient(45deg, #271631, #291933);
+box-shadow: 0px 0px 20px #6c4a80;
+}
